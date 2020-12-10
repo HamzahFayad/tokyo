@@ -52,4 +52,49 @@ html, body {
   padding: 6px;
 }
 
+@media only screen and (min-width: 750px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+    grid-gap: 12px;
+  }
+
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+    margin: 0 auto;
+  }
+  .card__image {
+    grid-column: 1/4;
+    grid-row: 1/3;
+  }
+  .card__content {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+    grid-gap: 12px;
+  }
+
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+    margin: 0 auto;
+  }
+  .card__image {
+    grid-column: 1/4;
+    grid-row: 1/3;
+  }
+  .card__content {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
